@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{E98DAA8B-A908-4124-B08F-12DF703A2311}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>qlrapchieuphim</RootNamespace>
+    <AssemblyName>qlrapchieuphim</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DAO\ThemXoaSua.cs" />
+    <Compile Include="fCaChieu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fCaChieu.designer.cs">
+      <DependentUpon>fCaChieu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDangNhap.Designer.cs">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDelete_CC_Ve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDelete_CC_Ve.Designer.cs">
+      <DependentUpon>fDelete_CC_Ve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDelete_KH_Ve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDelete_KH_Ve.Designer.cs">
+      <DependentUpon>fDelete_KH_Ve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDelete_NV_Ve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDelete_NV_Ve.designer.cs">
+      <DependentUpon>fDelete_NV_Ve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDelete_PHIM_Ve.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDelete_PHIM_Ve.Designer.cs">
+      <DependentUpon>fDelete_PHIM_Ve.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fDelete_Quyen_TK.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fDelete_Quyen_TK.Designer.cs">
+      <DependentUpon>fDelete_Quyen_TK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fKhachHang.designer.cs">
+      <DependentUpon>fKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMainAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMainAdmin.Designer.cs">
+      <DependentUpon>fMainAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fMainNV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fMainNV.Designer.cs">
+      <DependentUpon>fMainNV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNhanVien.designer.cs">
+      <DependentUpon>fNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fNhomQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fNhomQuyen.designer.cs">
+      <DependentUpon>fNhomQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPhanQuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPhanQuyen.Designer.cs">
+      <DependentUpon>fPhanQuyen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fPhim.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fPhim.designer.cs">
+      <DependentUpon>fPhim.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fTaiKhoan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fTaiKhoan.designer.cs">
+      <DependentUpon>fTaiKhoan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="fVe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="fVe.Designer.cs">
+      <DependentUpon>fVe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="fCaChieu.resx">
+      <DependentUpon>fCaChieu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDangNhap.resx">
+      <DependentUpon>fDangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDelete_CC_Ve.resx">
+      <DependentUpon>fDelete_CC_Ve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDelete_KH_Ve.resx">
+      <DependentUpon>fDelete_KH_Ve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDelete_NV_Ve.resx">
+      <DependentUpon>fDelete_NV_Ve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDelete_PHIM_Ve.resx">
+      <DependentUpon>fDelete_PHIM_Ve.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fDelete_Quyen_TK.resx">
+      <DependentUpon>fDelete_Quyen_TK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fKhachHang.resx">
+      <DependentUpon>fKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMainAdmin.resx">
+      <DependentUpon>fMainAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fMainNV.resx">
+      <DependentUpon>fMainNV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNhanVien.resx">
+      <DependentUpon>fNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fNhomQuyen.resx">
+      <DependentUpon>fNhomQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPhanQuyen.resx">
+      <DependentUpon>fPhanQuyen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fPhim.resx">
+      <DependentUpon>fPhim.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fTaiKhoan.resx">
+      <DependentUpon>fTaiKhoan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="fVe.resx">
+      <DependentUpon>fVe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logo-hufi.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\man-hinh-chieu-co-dinh.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\z3631874107614_c0141a76c53acac6d9b5507b3d050475.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
